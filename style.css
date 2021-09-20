@@ -36,11 +36,26 @@ h1 {
 }
 .count div {
 	background: #0f0f0f;
-	padding: 20px;
+	padding: 20px 10px;
 	border-radius: 4px;
 	width: 100px;
 }
 .count div h3 {
 	font-size: 32px;
 	font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+	.count {
+		grid-gap: 10px;
+	}
+	.count div h3 {
+		font-size: 20px;
+	}
+	.count div {
+		width: 100%;
+	}
+	.count div p {
+		font-size: 12px;
+	}
 }
